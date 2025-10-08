@@ -59,6 +59,38 @@ netflix-sentiment-analysis/
 └── requirements.txt            # Project dependencies
 ```
 
+### Quick Start
 
+- Clone the repository
+
+```bash
+
+git clone https://github.com/onatolumayowa/Netflix-Sentiment-Analysis.git
+cd Netflix-Sentiment-Analysis
+
+```
+
+- Create & activate a virtual environment
+
+```bash
+
+python -m venv venv
+venv\Scripts\activate     # On Windows
+# or
+source venv/bin/activate  # On Mac/Linux
+```
+
+- Install dependencies
+
+```bash
+
+pip install -r requirements.txt
+```
+
+- Launch the Streamlit app
+
+```bash
+streamlit run app.py
+```
 
 
