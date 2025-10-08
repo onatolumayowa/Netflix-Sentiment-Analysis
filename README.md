@@ -1,5 +1,7 @@
 # Netflix Reviews Sentiment Analysis
 
+### Project Overview
+
 Analyze customer reviews from Netflix using Natural Language Processing (NLP) to classify feedback into **Positive**, **Neutral**, or **Negative** sentiments.  
 This project helps visualize audience perceptions, uncover trends, and support data-driven decisions through an interactive **Streamlit web app**.
 
@@ -35,11 +37,8 @@ This project helps visualize audience perceptions, uncover trends, and support d
 - **VADER Sentiment** — Rule-based sentiment scoring
 - **Matplotlib & Seaborn** — Data visualization & charts
 - **WordCloud** — Visualizing frequent keywords in reviews
-- **Imbalanced-learn (SMOTE)** — Handling class imbalance during training
 - **Google Play Scraper** — Collecting Netflix app reviews from Play Store
 - **Requests** — Web requests & API handling
-- **Joblib** — Saving and loading ML models efficiently
-- **Jupyter Notebooks** — Prototyping & experimentation
 
 
 ### Project Structure
@@ -47,21 +46,23 @@ This project helps visualize audience perceptions, uncover trends, and support d
 ```bash
 
 netflix-sentiment-analysis/
-├── assets/                     # Images, icons, or other static files
-├── automation/                 # Scripts and pipelines for automated tasks
-├── data/                       # Datasets (raw and processed reviews)
-├── models/                     # Trained ML models and serialized files
-├── notebooks/                  # Jupyter notebooks for exploration & training
-├── scripts/                    # Python scripts for scraping, cleaning, and modeling
-├── .gitignore                  # Git ignore file
-├── app.py                      # Streamlit web application
-├── README.md                   # Project documentation
-└── requirements.txt            # Project dependencies
+│
+├── assets/                  # Images, icons, or static assets
+├── automation/              # Scripts for scheduled scraping & retraining
+├── data/                    # Raw and processed datasets
+├── models/                  # Saved trained models & vectorizers
+├── notebooks/               # Jupyter notebooks for experiments
+├── scripts/                 # Reusable Python scripts
+│
+├── .gitignore               # Ignored files & folders
+├── README.md                # Project documentation
+├── app.py                   # Streamlit app entry point
+└── requirements.txt         # Python dependencies
 ```
 
-### Quick Start
+### Setup & Usage
 
-- Clone the repository
+- Clone the Repository
 
 ```bash
 
@@ -70,7 +71,16 @@ cd Netflix-Sentiment-Analysis
 
 ```
 
-- Create & activate a virtual environment
+- Create and Activate Virtual Environment
+
+Using conda (recommended):
+
+```bash
+conda create -n netflix_review python=3.11
+conda activate netflix_review
+```
+
+Or using venv:
 
 ```bash
 
@@ -80,7 +90,7 @@ venv\Scripts\activate     # On Windows
 source venv/bin/activate  # On Mac/Linux
 ```
 
-- Install dependencies
+- Install Dependencies
 
 ```bash
 
@@ -92,5 +102,79 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+Then open 👉 http://localhost:8501/ in your browser.
+
+### Model Pipeline
+
+1. Text Preprocessing
+
+  - Lowercasing, punctuation removal, tokenization
+
+  - Stopword removal & lemmatization (NLTK)
+
+2. Feature Extraction
+
+  - TF-IDF vectorization
+
+3. Model Training
+
+  - Logistic Regression (Scikit-learn)
+
+  - Class imbalance handled with SMOTE
+
+4. Evaluation
+
+  - Confusion matrix, classification report, accuracy metrics
+
+5. Saving & Deployment
+
+  - Trained models & vectorizers saved in models/
+
+  - Loaded in Streamlit for live predictions
+
+
+### Streamlit App
+
+The Streamlit dashboard offers an interactive interface to explore sentiment insights:
+
+- Upload or view Netflix review datasets
+
+- Visualize sentiment distribution and word clouds
+
+- Filter by date, rating, or sentiment category
+
+- Explore interactive analytics and trends
+
+Run the dashboard with:
+
+```bash
+streamlit run app.py
+```
+
+Then open http://localhost:8501/
+
+
+### Automation Plan
+
+The project supports end-to-end automation to keep data and models fresh:
+
+- Data Collection — Pull reviews from App Store & Play Store using scraping scripts
+
+- Processing — Clean text, classify sentiment, save to data/
+
+- Visualization — Generate summary reports and update dashboards
+
+- Deployment — Schedule periodic scraping & automatic redeployment
+
+
+### 🚀 Deployment
+
+Deploy the app to make it accessible online:
+
+- https://streamlit.io/cloud - simplest no-code hosting
+
+- **Render / Hugging Face Spaces** — flexible free hosting platforms
+
+- **Docker** — for CI/CD and containerized deployment
 
 
