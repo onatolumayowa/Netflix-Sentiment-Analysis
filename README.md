@@ -41,15 +41,28 @@ This project helps visualize audience perceptions, uncover trends, and support d
 - **Requests** — Web requests & API handling
 
 
+### Dataset
+
+This project includes Netflix review datasets:
+
+- **[netflix_reviews_cleaned.csv](data/netflix_reviews_cleaned.csv)** – The cleaned dataset used for analysis and modeling.
+- **[netflix_reviews_raw.csv](data/netflix_reviews_raw.csv)** – The original raw dataset.
+- **[netflix_reviews_sample.csv](data/netflix_reviews_sample.csv)** – A small sample of 100 reviews for quick preview and GitHub display.
+
+> 💡 Note: The full datasets are large and may not render in GitHub directly. Use the sample dataset to explore the data structure and for testing the app.
+
+
 ### Project Structure
 
 ```bash
-
 netflix-sentiment-analysis/
 │
 ├── assets/                  # Images, icons, or static assets
 ├── automation/              # Scripts for scheduled scraping & retraining
-├── data/                    # Raw and processed datasets
+├── data/                    # Datasets
+│   ├── netflix_reviews_cleaned.csv       # Cleaned dataset used for analysis
+│   ├── netflix_reviews_raw.csv   # Original raw dataset
+│   └── netflix_reviews_sample.csv    # Small sample dataset for GitHub preview
 ├── models/                  # Saved trained models & vectorizers
 ├── notebooks/               # Jupyter notebooks for experiments
 ├── scripts/                 # Reusable Python scripts
