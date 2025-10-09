@@ -106,31 +106,31 @@ Then open 👉 http://localhost:8501/ in your browser.
 
 ### Model Pipeline
 
-1. Text Preprocessing
+- Text Preprocessing
 
-  - Lowercasing, punctuation removal, tokenization
+   - Lowercasing, punctuation removal, tokenization
 
-  - Stopword removal & lemmatization (NLTK)
+   - Stopword removal & lemmatization (NLTK)
 
-2. Feature Extraction
+- Feature Extraction
 
-  - TF-IDF vectorization
+   - TF-IDF vectorization
 
-3. Model Training
+- Model Training
 
-  - Logistic Regression (Scikit-learn)
+   - Logistic Regression (Scikit-learn)
 
-  - Class imbalance handled with SMOTE
+   - Class imbalance handled with SMOTE
 
-4. Evaluation
+- Evaluation
 
-  - Confusion matrix, classification report, accuracy metrics
+   - Confusion matrix, classification report, accuracy metrics
 
-5. Saving & Deployment
+- Saving & Deployment
 
-  - Trained models & vectorizers saved in models/
+   - Trained models & vectorizers saved in models/
 
-  - Loaded in Streamlit for live predictions
+   - Loaded in Streamlit for live predictions
 
 
 ### Streamlit App
@@ -167,7 +167,7 @@ The project supports end-to-end automation to keep data and models fresh:
 - Deployment — Schedule periodic scraping & automatic redeployment
 
 
-### 🚀 Deployment
+### Deployment
 
 Deploy the app to make it accessible online:
 
@@ -176,5 +176,24 @@ Deploy the app to make it accessible online:
 - **Render / Hugging Face Spaces** — flexible free hosting platforms
 
 - **Docker** — for CI/CD and containerized deployment
+
+
+### Author
+
+**Onatolu Mayowa**  
+For collaborations or feedback — feel free to connect!
+
+📧 Email: [onatolumayowa2019@gmail.com](mailto:onatolumayowa2019@gmail.com)  
+💼 LinkedIn: [https://linkedin.com/in/onatolu-mayowa](https://linkedin.com/in/onatolu-mayowa)  
+🐦 Twitter: [https://x.com/OnatoluMayor](https://x.com/OnatoluMayor)  
+🐙 GitHub: [https://github.com/onatolumayowa](https://github.com/onatolumayowa)  
+🌐 Portfolio: [https://OnatoluMayowa.github.io](https://OnatoluMayowa.github.io)
+
+
+### License
+
+This project is open-source and available under the **MIT License**.
+
+
 
 
