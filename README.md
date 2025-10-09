@@ -267,8 +267,7 @@ For collaborations or feedback — feel free to connect!
 
 This project is open-source and available under the **MIT License**.
 
-### 1. Rating Distribution
-![Alt text](assets/rating_distribution.png)
 
+![Alt text](image.png)
 
 
