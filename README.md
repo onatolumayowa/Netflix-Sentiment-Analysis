@@ -267,8 +267,6 @@ For collaborations or feedback — feel free to connect!
 
 This project is open-source and available under the **MIT License**.
 
-## results
 
-!(visualization)[C:\Users\user\New folder\image.png]
 
 
