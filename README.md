@@ -1,5 +1,8 @@
 # Netflix Reviews Sentiment Analysis
 
+## Table of Contents
+
+
 ### Project Overview
 
 Analyze customer reviews from Netflix using Natural Language Processing (NLP) to classify feedback into **Positive**, **Neutral**, or **Negative** sentiments.  
@@ -72,6 +75,7 @@ netflix-sentiment-analysis/
 ├── .gitignore               # Ignored files & folders
 ├── README.md                # Project documentation
 ├── app.py                   # Streamlit app entry point
+└── requirements_minimum.txt         # Python dependencies for a flexible environment with compatible newer versions
 └── requirements.txt         # Python dependencies
 ```
 
@@ -86,7 +90,42 @@ cd Netflix-Sentiment-Analysis
 
 ```
 
-- Create and Activate Virtual Environment
+- Automatic Environment Setup (Recommended)
+
+Linux / Mac or Windows with Bash (Git Bash / WSL):
+
+```bash
+
+sh setup/setup_env.sh
+```
+   
+Windows CMD / PowerShell users:
+
+```bat
+
+setup\setup_env.bat
+```
+
+✅ Creates virtual environment, installs dependencies, and displays a success message.
+
+- Activate the Environment
+
+Linux / Mac (or Windows Bash):
+
+```bash
+source venv/bin/activate
+```
+
+Windows CMD / PowerShell:
+
+```bat
+venv\Scripts\activate
+```
+
+Tip: You must activate the environment before running notebooks, scripts, or the Streamlit app.
+
+
+- Manual Virtual Environment Setup (Optional)
 
 Using conda (recommended):
 
@@ -118,6 +157,22 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 Then open 👉 http://localhost:8501/ in your browser.
+
+- Recommended Setup for First-Time Users
+
+   - Easiest & fastest: Use the automatic setup scripts (setup_env.sh for Linux/Mac or Git Bash, setup_env.bat for Windows CMD/PowerShell). This sets up the virtual environment and installs all dependencies in one command.
+
+   - Alternative manual method: If you prefer full control or are using Conda, follow the manual virtual environment setup section above.
+
+   - Flexible package versions: To allow minor future updates without breaking the project, you can replace requirements.txt with requirements_minimum.txt in the scripts or pip install command.
+
+
+### Environment Setup Note
+
+- For a fully reproducible setup (exact same versions used in this project), run: pip install -r requirements.txt
+
+- For a flexible environment with compatible newer versions, run: pip install -r requirements_minimum.txt
+
 
 ### Model Pipeline
 
