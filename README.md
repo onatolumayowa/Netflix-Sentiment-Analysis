@@ -267,6 +267,9 @@ For collaborations or feedback — feel free to connect!
 
 This project is open-source and available under the **MIT License**.
 
+# image
+
+![Rating Distribution](assets/rating_distribution.png)
 
 
 
