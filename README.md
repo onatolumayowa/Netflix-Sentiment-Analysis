@@ -92,57 +92,58 @@ cd Netflix-Sentiment-Analysis
 
 - Automatic Environment Setup (Recommended)
 
-Linux / Mac or Windows with Bash (Git Bash / WSL):
+   - Linux / Mac or Windows with Bash (Git Bash / WSL):
 
-```bash
+   ```bash
 
-sh setup/setup_env.sh
-```
+   sh setup/setup_env.sh
+   ```
    
-Windows CMD / PowerShell users:
+   - Windows CMD / PowerShell users:
 
-```bat
+   ```bat
 
-setup\setup_env.bat
-```
+   setup\setup_env.bat
+   ```
 
-✅ Creates virtual environment, installs dependencies, and displays a success message.
+   ✅ Creates virtual environment, installs dependencies, and displays a success message.
+
 
 - Activate the Environment
 
-Linux / Mac (or Windows Bash):
+   - Linux / Mac (or Windows Bash):
 
-```bash
-source venv/bin/activate
-```
+   ```bash
+   source venv/bin/activate
+   ```
 
-Windows CMD / PowerShell:
+   - Windows CMD / PowerShell:
 
-```bat
-venv\Scripts\activate
-```
+   ```bat
+   venv\Scripts\activate
+   ```
 
-Tip: You must activate the environment before running notebooks, scripts, or the Streamlit app.
+   Tip: You must activate the environment before running notebooks, scripts, or the Streamlit app.
 
 
 - Manual Virtual Environment Setup (Optional)
 
-Using conda (recommended):
+   - Using conda (recommended):
+ 
+   ```bash
+   conda create -n netflix_review python=3.11
+   conda activate netflix_review
+   ```
 
-```bash
-conda create -n netflix_review python=3.11
-conda activate netflix_review
-```
+   - Or using venv:
 
-Or using venv:
+   ```bash
 
-```bash
-
-python -m venv venv
-venv\Scripts\activate     # On Windows
-# or
-source venv/bin/activate  # On Mac/Linux
-```
+   python -m venv venv
+   venv\Scripts\activate     # On Windows
+   # or
+   source venv/bin/activate  # On Mac/Linux
+   ```
 
 - Install Dependencies
 
