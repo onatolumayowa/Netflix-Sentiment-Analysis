@@ -71,7 +71,9 @@ netflix-sentiment-analysis/
 ├── models/                  # Saved trained models & vectorizers
 ├── notebooks/               # Jupyter notebooks for experiments
 ├── scripts/                 # Reusable Python scripts
-│
+├── setup/                 # Reusable Python scripts
+│   ├── setup_env.sh      # For Linux/Mac (bash)
+│   ├── setup_env.bat     # For Windows (Command Prompt / PowerShell compatible)
 ├── .gitignore               # Ignored files & folders
 ├── README.md                # Project documentation
 ├── app.py                   # Streamlit app entry point
@@ -101,7 +103,7 @@ cd Netflix-Sentiment-Analysis
    
    - Windows CMD / PowerShell users:
 
-   ```bat
+   ```bash
 
    setup\setup_env.bat
    ```
@@ -119,7 +121,7 @@ cd Netflix-Sentiment-Analysis
 
    - Windows CMD / PowerShell:
 
-   ```bat
+   ```bash
    venv\Scripts\activate
    ```
 
