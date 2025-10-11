@@ -267,6 +267,13 @@ For collaborations or feedback — feel free to connect!
 
 This project is open-source and available under the **MIT License**.
 
+# tty
+
+Optional Insight Note (you can add to README or notebook text cell)
+
+Note: Rows with missing or empty clean_review values were removed to ensure only meaningful text is used for sentiment analysis and feature extraction.
+
+
 # image
 
 ![Rating Distribution](assets/rating_distribution.png)
