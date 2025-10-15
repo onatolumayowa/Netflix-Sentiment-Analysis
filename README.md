@@ -2,14 +2,13 @@
 
 ## Table of Contents
 
-
 ### Project Overview
 
 Analyze customer reviews from Netflix using Natural Language Processing (NLP) to classify feedback into **Positive**, **Neutral**, or **Negative** sentiments.  
 This project helps visualize audience perceptions, uncover trends, and support data-driven decisions through an interactive **Streamlit web app**.
 
-
 ### Features
+
 - **Data Collection** — Scrape Netflix reviews from Play Store & App Store  
 - **Data Cleaning & Preprocessing** — Remove noise, clean text, handle duplicates  
 - **Sentiment Analysis** — Classify reviews into 3 categories:  
@@ -20,7 +19,6 @@ This project helps visualize audience perceptions, uncover trends, and support d
 - **Streamlit Dashboard** — Interactive interface for exploring insights  
 - **Automation Scripts** — For fast, repeatable analysis
 
-
 ### Sentiment Categories
 
 | Category  | Description |
@@ -28,7 +26,6 @@ This project helps visualize audience perceptions, uncover trends, and support d
 | 👍 Positive | Indicates satisfaction, praise, or enthusiasm |
 | 😐 Neutral | Balanced, factual, or non-emotional feedback |
 | 👎 Negative | Expresses dissatisfaction, complaints, or frustration |
-
 
 ### Tech Stack
 
@@ -43,7 +40,6 @@ This project helps visualize audience perceptions, uncover trends, and support d
 - **Google Play Scraper** — Collecting Netflix app reviews from Play Store
 - **Requests** — Web requests & API handling
 
-
 ### Dataset
 
 This project includes Netflix review datasets:
@@ -54,7 +50,6 @@ This project includes Netflix review datasets:
 - **[netflix_reviews_sample.csv](data/netflix_reviews_sample.csv)** – A small sample of 100 reviews for quick preview and GitHub display.
 
 > 💡 Note: The full datasets are large and may not render in GitHub directly. Use the sample dataset to explore the data structure and for testing the app.
-
 
 ### Project Structure
 
@@ -94,14 +89,14 @@ cd Netflix-Sentiment-Analysis
 
 - Automatic Environment Setup (Recommended)
 
-   - Linux / Mac or Windows with Bash (Git Bash / WSL):
+  - Linux / Mac or Windows with Bash (Git Bash / WSL):
 
    ```bash
 
    sh setup/setup_env.sh
    ```
-   
-   - Windows CMD / PowerShell users:
+
+  - Windows CMD / PowerShell users:
 
    ```bash
 
@@ -110,16 +105,15 @@ cd Netflix-Sentiment-Analysis
 
    ✅ Creates virtual environment, installs dependencies, and displays a success message.
 
-
 - Activate the Environment
 
-   - Linux / Mac (or Windows Bash):
+  - Linux / Mac (or Windows Bash):
 
    ```bash
    source venv/bin/activate
    ```
 
-   - Windows CMD / PowerShell:
+  - Windows CMD / PowerShell:
 
    ```bash
    venv\Scripts\activate
@@ -127,17 +121,16 @@ cd Netflix-Sentiment-Analysis
 
    Tip: You must activate the environment before running notebooks, scripts, or the Streamlit app.
 
-
 - Manual Virtual Environment Setup (Optional)
 
-   - Using conda (recommended):
- 
+  - Using conda (recommended):
+
    ```bash
    conda create -n netflix_review python=3.11
    conda activate netflix_review
    ```
 
-   - Or using venv:
+  - Or using venv:
 
    ```bash
 
@@ -159,16 +152,16 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
-Then open 👉 http://localhost:8501/ in your browser.
+
+Then open 👉 <http://localhost:8501/> in your browser.
 
 - Recommended Setup for First-Time Users
 
-   - Easiest & fastest: Use the automatic setup scripts (setup_env.sh for Linux/Mac or Git Bash, setup_env.bat for Windows CMD/PowerShell). This sets up the virtual environment and installs all dependencies in one command.
+  - Easiest & fastest: Use the automatic setup scripts (setup_env.sh for Linux/Mac or Git Bash, setup_env.bat for Windows CMD/PowerShell). This sets up the virtual environment and installs all dependencies in one command.
 
-   - Alternative manual method: If you prefer full control or are using Conda, follow the manual virtual environment setup section above.
+  - Alternative manual method: If you prefer full control or are using Conda, follow the manual virtual environment setup section above.
 
-   - Flexible package versions: To allow minor future updates without breaking the project, you can replace requirements.txt with requirements_minimum.txt in the scripts or pip install command.
-
+  - Flexible package versions: To allow minor future updates without breaking the project, you can replace requirements.txt with requirements_minimum.txt in the scripts or pip install command.
 
 ### Environment Setup Note
 
@@ -176,35 +169,33 @@ Then open 👉 http://localhost:8501/ in your browser.
 
 - For a flexible environment with compatible newer versions, run: pip install -r requirements_minimum.txt
 
-
 ### Model Pipeline
 
 - Text Preprocessing
 
-   - Lowercasing, punctuation removal, tokenization
+  - Lowercasing, punctuation removal, tokenization
 
-   - Stopword removal & lemmatization (NLTK)
+  - Stopword removal & lemmatization (NLTK)
 
 - Feature Extraction
 
-   - TF-IDF vectorization
+  - TF-IDF vectorization
 
 - Model Training
 
-   - Logistic Regression (Scikit-learn)
+  - Logistic Regression (Scikit-learn)
 
-   - Class imbalance handled with SMOTE
+  - Class imbalance handled with SMOTE
 
 - Evaluation
 
-   - Confusion matrix, classification report, accuracy metrics
+  - Confusion matrix, classification report, accuracy metrics
 
 - Saving & Deployment
 
-   - Trained models & vectorizers saved in models/
+  - Trained models & vectorizers saved in models/
 
-   - Loaded in Streamlit for live predictions
-
+  - Loaded in Streamlit for live predictions
 
 ### Streamlit App
 
@@ -224,8 +215,7 @@ Run the dashboard with:
 streamlit run app.py
 ```
 
-Then open http://localhost:8501/
-
+Then open <http://localhost:8501/>
 
 ### Automation Plan
 
@@ -239,17 +229,15 @@ The project supports end-to-end automation to keep data and models fresh:
 
 - Deployment — Schedule periodic scraping & automatic redeployment
 
-
 ### Deployment
 
 Deploy the app to make it accessible online:
 
-- https://streamlit.io/cloud - simplest no-code hosting
+- <https://streamlit.io/cloud> - simplest no-code hosting
 
 - **Render / Hugging Face Spaces** — flexible free hosting platforms
 
 - **Docker** — for CI/CD and containerized deployment
-
 
 ### Author
 
@@ -262,22 +250,43 @@ For collaborations or feedback — feel free to connect!
 🐙 GitHub: [https://github.com/onatolumayowa](https://github.com/onatolumayowa)  
 🌐 Portfolio: [https://OnatoluMayowa.github.io](https://OnatoluMayowa.github.io)
 
-
 ### License
 
 This project is open-source and available under the **MIT License**.
 
-# tty
+### tty
 
 Optional Insight Note (you can add to README or notebook text cell)
 
 Note: Rows with missing or empty clean_review values were removed to ensure only meaningful text is used for sentiment analysis and feature extraction.
 
+### 🎯 Sentiment Labeling Strategy
+
+This dataset originally contained two separate sentiment signals:
+
+| Column | Source | Notes |
+|--------|--------|-------|
+| `sentiment` | Text-based classification using **VADER** NLP analysis | May misinterpret short or sarcastic reviews |
+| `sentiment_rating` | Derived from **user star ratings** | Ratings can be generic and not always aligned with review tone |
+
+To improve reliability, I created a final column called **`sentiment_combined`**, which merges both signals:
+
+> ✅ **`sentiment_combined` is the final label used for all analysis, visualizations, and model training.**
+
+### ✅ Why Use `sentiment_combined`?
+
+- Star ratings alone don’t always reflect true sentiment expressed in text.
+- VADER sometimes assigns positive scores to neutral or sarcastic reviews.
+- Combining both sources results in **more accurate and balanced sentiment classification**.
+
+#### 🧠 Combination Logic Summary
+
+- If **both sources agree** → retain the sentiment.
+- If one is **neutral and the other is clear** → use the stronger label.
+- If **they strongly conflict** → assign **neutral** to reduce noise in the model.
+
+This ensures that the **sentiment labels are more context-aware and closer to real user intent**, improving both insights and modeling accuracy.
 
 # image
 
 ![Rating Distribution](assets/rating_distribution.png)
-
-
-
-
